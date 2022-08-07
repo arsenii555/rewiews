@@ -4,7 +4,6 @@ from oauth2client.service_account import ServiceAccountCredentials
 import pandas as pd
 import os
 from csv import writer
-from pprint import pprint
 
 
 def funct():
@@ -39,4 +38,3 @@ def funct():
             for i in new_df:
                 i.append('False')
                 writer_object.writerow(i)
-

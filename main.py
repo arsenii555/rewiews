@@ -3,7 +3,7 @@ from email.mime.text import MIMEText
 import datetime as dt
 import pandas as pd
 from time import sleep
-from feedback import test
+import test
 
 
 def send_email(message, getter):
