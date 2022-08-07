@@ -18,7 +18,7 @@ def send_email(message, getter):
         msg["SUBJECT"] = "Отзыв о клинике"
         server.sendmail(sender, getter, msg.as_string())
 
-        return "Сообщение успешно отправлено"
+        return f"Сообщение успешно отправлено адресату {getter}"
     except Exception as _ex:
         return f"{_ex}\nПроверьте логин и пароль"
 
